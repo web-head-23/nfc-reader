@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
   background: #0f172a;
+  font-family: system-ui, sans-serif;
   color: white;
   display: flex;
   justify-content: center;
@@ -11,26 +11,39 @@ body {
 .card {
   background: #020617;
   padding: 20px;
-  border-radius: 12px;
   width: 90%;
   max-width: 400px;
+  border-radius: 12px;
   text-align: center;
 }
 
 button {
-  background: #22c55e;
-  border: none;
-  padding: 12px;
   width: 100%;
+  padding: 12px;
+  border: none;
   border-radius: 8px;
+  background: #22c55e;
   font-size: 16px;
   cursor: pointer;
 }
 
-pre {
-  background: #020617;
+#result {
   margin-top: 15px;
-  padding: 10px;
   text-align: left;
-  overflow-x: auto;
+  background: #020617;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+#status {
+  margin-top: 10px;
+  opacity: 0.8;
 }
