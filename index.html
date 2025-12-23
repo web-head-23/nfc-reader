@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NFC Reader Web App</title>
+  <title>NFC Reader</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1>📲 NFC Reader</h1>
-    <button id="scanBtn">Scan NFC Tag</button>
-    <pre id="output">Waiting...</pre>
+<div class="card">
+  <h1>📲 NFC Reader</h1>
+  <button id="scanBtn">Scan NFC Card</button>
+
+  <div id="result" class="hidden">
+    <p><strong>UID:</strong> <span id="uid"></span></p>
+    <p><strong>Time:</strong> <span id="time"></span></p>
+    <p><strong>Records:</strong></p>
+    <ul id="records"></ul>
   </div>
 
-  <script src="script.js"></script>
+  <p id="status">Waiting for scan…</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
